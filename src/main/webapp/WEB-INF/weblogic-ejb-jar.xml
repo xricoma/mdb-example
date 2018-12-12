@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<weblogic-ejb-jar xmlns="http://xmlns.oracle.com/weblogic/weblogic-ejb-jar" 
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.oracle.com/weblogic/weblogic-ejb-jar  http://xmlns.oracle.com/weblogic/weblogic-ejb-jar/1.1/weblogic-ejb-jar.xsd"> 
+    <weblogic-enterprise-bean>
+        <ejb-name>TextMDB</ejb-name>
+        <message-driven-descriptor>
+            <destination-jndi-name>test-dq4</destination-jndi-name>
+        </message-driven-descriptor>
+        <dispatch-policy>test-wm-mdb</dispatch-policy>
+    </weblogic-enterprise-bean>
+</weblogic-ejb-jar>

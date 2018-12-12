@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xmlns="http://java.sun.com/xml/ns/javaee" 
+    xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+    <servlet>
+        <servlet-name>ExampleMDB</servlet-name>
+        <servlet-class>com.xricoma.examples.ExampleMDB</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>TextMDB</servlet-name>
+        <servlet-class>com.xricoma.examples.TextMDB</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ExampleMDB_JMSReplyTo</servlet-name>
+        <servlet-class>com.xricoma.examples.ExampleMDB_JMSReplyTo</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>MyMDB</servlet-name>
+        <servlet-class>com.xricoma.examples.MyMDB</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>MyMDB</servlet-name>
+        <url-pattern>/MyMDB</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ExampleMDB</servlet-name>
+        <url-pattern>/ExampleMDB</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>TextMDB</servlet-name>
+        <url-pattern>/TextMDB</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ExampleMDB_JMSReplyTo</servlet-name>
+        <url-pattern>/ExampleMDB_JMSReplyTo</url-pattern>
+    </servlet-mapping>
+</web-app>
